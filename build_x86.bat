@@ -42,7 +42,7 @@ if "%errorlevel%" == "1" (
 )
 
 
-if not exist lib32_vc14 mkdir lib32_vc14.1
+if not exist lib32_vc14.1 mkdir lib32_vc14.1
 copy /Y lib\PocoFoundationmt.lib lib32_vc14.1
 copy /Y lib\PocoUtilmt.lib lib32_vc14.1
 copy /Y lib\PocoXMLmt.lib lib32_vc14.1
@@ -50,6 +50,52 @@ copy /Y lib\PocoJSONmt.lib lib32_vc14.1
 copy /Y lib\PocoCryptomt.lib lib32_vc14.1
 copy /Y lib\PocoNetmt.lib lib32_vc14.1
 copy /Y lib\PocoNetSSLmt.lib lib32_vc14.1
+
+
+"%VISUAL_STUDIO_2017_ROOT%\MSBuild\15.0\Bin\MSBuild.exe" /m /target:Rebuild /property:Configuration=debug_static_mt;Platform=Win32 /fileLogger /fileLoggerParameters:LogFile=Foundation\msbuildDebugNativeX86.log;Verbosity=diagnostic;Encoding=UTF-8 Foundation\Foundation_vs140.vcxproj
+if "%errorlevel%" == "1" (
+	goto ERROR_END
+)
+
+"%VISUAL_STUDIO_2017_ROOT%\MSBuild\15.0\Bin\MSBuild.exe" /m /target:Rebuild /property:Configuration=debug_static_mt;Platform=Win32 /fileLogger /fileLoggerParameters:LogFile=Util\msbuildDebugNativeX86.log;Verbosity=diagnostic;Encoding=UTF-8 Util\Util_vs140.vcxproj
+if "%errorlevel%" == "1" (
+	goto ERROR_END
+)
+
+"%VISUAL_STUDIO_2017_ROOT%\MSBuild\15.0\Bin\MSBuild.exe" /m /target:Rebuild /property:Configuration=debug_static_mt;Platform=Win32 /fileLogger /fileLoggerParameters:LogFile=XML\msbuildDebugNativeX86.log;Verbosity=diagnostic;Encoding=UTF-8 XML\XML_vs140.vcxproj
+if "%errorlevel%" == "1" (
+ 	goto ERROR_END
+)
+
+"%VISUAL_STUDIO_2017_ROOT%\MSBuild\15.0\Bin\MSBuild.exe" /m /target:Rebuild /property:Configuration=debug_static_mt;Platform=Win32 /fileLogger /fileLoggerParameters:LogFile=JSON\msbuildDebugNativeX86.log;Verbosity=diagnostic;Encoding=UTF-8 JSON\JSON_vs140.vcxproj
+if "%errorlevel%" == "1" (
+	goto ERROR_END
+)
+
+"%VISUAL_STUDIO_2017_ROOT%\MSBuild\15.0\Bin\MSBuild.exe" /m /target:Rebuild /property:Configuration=debug_static_mt;Platform=Win32 /fileLogger /fileLoggerParameters:LogFile=Crypto\msbuildDebugNativeX86.log;Verbosity=diagnostic;Encoding=UTF-8 Crypto\Crypto_vs140.vcxproj
+if "%errorlevel%" == "1" (
+	goto ERROR_END
+)
+
+"%VISUAL_STUDIO_2017_ROOT%\MSBuild\15.0\Bin\MSBuild.exe" /m /target:Rebuild /property:Configuration=debug_static_mt;Platform=Win32 /fileLogger /fileLoggerParameters:LogFile=Net\msbuildDebugNativeX86.log;Verbosity=diagnostic;Encoding=UTF-8 Net\Net_vs140.vcxproj
+if "%errorlevel%" == "1" (
+	goto ERROR_END
+)
+
+"%VISUAL_STUDIO_2017_ROOT%\MSBuild\15.0\Bin\MSBuild.exe" /m /target:Rebuild /property:Configuration=debug_static_mt;Platform=Win32 /fileLogger /fileLoggerParameters:LogFile=NetSSL_OpenSSL\msbuildDebugNativeX86.log;Verbosity=diagnostic;Encoding=UTF-8 NetSSL_OpenSSL\NetSSL_OpenSSL_vs140.vcxproj
+if "%errorlevel%" == "1" (
+	goto ERROR_END
+)
+
+
+if not exist lib32_vc14.1 mkdir lib32_vc14.1
+copy /Y lib\PocoFoundationmtd.lib lib32_vc14.1
+copy /Y lib\PocoUtilmtd.lib lib32_vc14.1
+copy /Y lib\PocoXMLmtd.lib lib32_vc14.1
+copy /Y lib\PocoJSONmtd.lib lib32_vc14.1
+copy /Y lib\PocoCryptomtd.lib lib32_vc14.1
+copy /Y lib\PocoNetmtd.lib lib32_vc14.1
+copy /Y lib\PocoNetSSLmtd.lib lib32_vc14.1
 
 
 goto END
