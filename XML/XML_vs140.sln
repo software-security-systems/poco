@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XML", "XML_vs140.vcxproj", "{9E211743-85FE-4977-82F3-4F04B40C912D}"
 EndProject
@@ -61,10 +61,12 @@ Global
 		{C9ACF028-17A1-44C2-8C09-DFD3BD9E7D45}.release_static_mt|Win32.ActiveCfg = release_static_mt|Win32
 		{C9ACF028-17A1-44C2-8C09-DFD3BD9E7D45}.release_static_mt|Win32.Build.0 = release_static_mt|Win32
 		{C9ACF028-17A1-44C2-8C09-DFD3BD9E7D45}.release_static_mt|Win32.Deploy.0 = release_static_mt|Win32
-		{C9ACF028-17A1-44C2-8C09-DFD3BD9E7D45}.xp_debug_static_mt|Win32.ActiveCfg = xp_debug_static_mt|Win32
-		{C9ACF028-17A1-44C2-8C09-DFD3BD9E7D45}.xp_debug_static_mt|Win32.Build.0 = xp_debug_static_mt|Win32
-		{C9ACF028-17A1-44C2-8C09-DFD3BD9E7D45}.xp_release_static_mt|Win32.ActiveCfg = xp_release_static_mt|Win32
-		{C9ACF028-17A1-44C2-8C09-DFD3BD9E7D45}.xp_release_static_mt|Win32.Build.0 = xp_release_static_mt|Win32
+		{C9ACF028-17A1-44C2-8C09-DFD3BD9E7D45}.xp_debug_static_mt|Win32.ActiveCfg = debug_static_mt|Win32
+		{C9ACF028-17A1-44C2-8C09-DFD3BD9E7D45}.xp_debug_static_mt|Win32.Build.0 = debug_static_mt|Win32
+		{C9ACF028-17A1-44C2-8C09-DFD3BD9E7D45}.xp_debug_static_mt|Win32.Deploy.0 = debug_static_mt|Win32
+		{C9ACF028-17A1-44C2-8C09-DFD3BD9E7D45}.xp_release_static_mt|Win32.ActiveCfg = release_static_mt|Win32
+		{C9ACF028-17A1-44C2-8C09-DFD3BD9E7D45}.xp_release_static_mt|Win32.Build.0 = release_static_mt|Win32
+		{C9ACF028-17A1-44C2-8C09-DFD3BD9E7D45}.xp_release_static_mt|Win32.Deploy.0 = release_static_mt|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

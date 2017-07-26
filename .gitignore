@@ -115,3 +115,7 @@ cmake-build/
 *.bak
 stage/
 releases/
+.vs/ProjectSettings.json
+.vs/
+Foundation/.vs/Foundation_x64_vs150/v15/
+

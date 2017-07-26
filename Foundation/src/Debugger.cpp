@@ -113,7 +113,7 @@ void Debugger::enter()
 	#if defined(POCO_OS_FAMILY_WINDOWS)
 	if (isAvailable())
 	{
-		DebugBreak();
+		// DebugBreak();
 	}
 	#elif defined(POCO_VXWORKS)
 	{

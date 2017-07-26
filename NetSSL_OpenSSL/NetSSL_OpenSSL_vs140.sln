@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetSSL_OpenSSL", "NetSSL_OpenSSL_vs140.vcxproj", "{5AECC55E-A469-11DA-8DA6-005056C00008}"
 EndProject
@@ -61,10 +61,12 @@ Global
 		{B2B88092-5BCE-4AC0-941E-88167138B4A7}.release_static_mt|Win32.ActiveCfg = release_static_mt|Win32
 		{B2B88092-5BCE-4AC0-941E-88167138B4A7}.release_static_mt|Win32.Build.0 = release_static_mt|Win32
 		{B2B88092-5BCE-4AC0-941E-88167138B4A7}.release_static_mt|Win32.Deploy.0 = release_static_mt|Win32
-		{B2B88092-5BCE-4AC0-941E-88167138B4A7}.xp_debug_static_mt|Win32.ActiveCfg = xp_debug_static_mt|Win32
-		{B2B88092-5BCE-4AC0-941E-88167138B4A7}.xp_debug_static_mt|Win32.Build.0 = xp_debug_static_mt|Win32
-		{B2B88092-5BCE-4AC0-941E-88167138B4A7}.xp_release_static_mt|Win32.ActiveCfg = xp_release_static_mt|Win32
-		{B2B88092-5BCE-4AC0-941E-88167138B4A7}.xp_release_static_mt|Win32.Build.0 = xp_release_static_mt|Win32
+		{B2B88092-5BCE-4AC0-941E-88167138B4A7}.xp_debug_static_mt|Win32.ActiveCfg = debug_static_mt|Win32
+		{B2B88092-5BCE-4AC0-941E-88167138B4A7}.xp_debug_static_mt|Win32.Build.0 = debug_static_mt|Win32
+		{B2B88092-5BCE-4AC0-941E-88167138B4A7}.xp_debug_static_mt|Win32.Deploy.0 = debug_static_mt|Win32
+		{B2B88092-5BCE-4AC0-941E-88167138B4A7}.xp_release_static_mt|Win32.ActiveCfg = release_static_mt|Win32
+		{B2B88092-5BCE-4AC0-941E-88167138B4A7}.xp_release_static_mt|Win32.Build.0 = release_static_mt|Win32
+		{B2B88092-5BCE-4AC0-941E-88167138B4A7}.xp_release_static_mt|Win32.Deploy.0 = release_static_mt|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

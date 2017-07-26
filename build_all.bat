@@ -1,18 +1,18 @@
-start /i /wait build_dbg.bat
+start /i /wait build_x86.bat
 if "%errorlevel%" == "1" (
 	goto ERROR_END
 )
 
-start /i /wait build.bat
+start /i /wait build_x64.bat
 if "%errorlevel%" == "1" (
 	goto ERROR_END
 )
-start /i /wait build_xp_dbg.bat
+start /i /wait build_x86_xp.bat
 if "%errorlevel%" == "1" (
 	goto ERROR_END
 )
 
-start /i /wait build_xp.bat
+start /i /wait build_x64_xp.bat
 if "%errorlevel%" == "1" (
 	goto ERROR_END
 )
